@@ -1,0 +1,82 @@
+[
+	{
+		"id": 1,
+		"category": "laptop"
+	},
+	{
+		"id": 2,
+		"category": "phone"
+	},
+	{
+		"id": 3,
+		"category": "smartwatch"
+	},
+	{
+		"id": 4,
+		"category": "laptop"
+	},
+	{
+		"id": 5,
+		"category": "accessory"
+	},
+	{
+		"id": 6,
+		"category": "phone"
+	},
+	{
+		"id": 7,
+		"category": "smartwatch"
+	},
+	{
+		"id": 8,
+		"category": "accessory"
+	},
+	{
+		"id": 9,
+		"category": "accessory"
+	},
+	{
+		"id": 10,
+		"category": "laptop"
+	},
+	{
+		"id": 11,
+		"category": "tablet"
+	},
+	{
+		"id": 12,
+		"category": "laptop"
+	},
+	{
+		"id": 13,
+		"category": "accessory"
+	},
+	{
+		"id": 14,
+		"category": "laptop"
+	},
+	{
+		"id": 15,
+		"category": "smartwatch"
+	},
+	{
+		"id": 16,
+		"category": "laptop"
+	},
+	{
+		"id": 17,
+		"category": "phone"
+	},
+	{
+		"id": 18,
+		"category": "laptop"
+	},
+	{
+		"id": 19,
+		"category": "laptop"
+	},
+	{
+		"id": 20,
+		"category": "accessory"
+	}
+]

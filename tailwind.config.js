@@ -21,9 +21,6 @@ export default {
       backgroundColor:{
         themeBG: "#9538E2"
       },
-      backgroundImage:{
-        bannerImage: "url('src/assets/banner.jpg')",
-      },
     },
   },
   plugins: [

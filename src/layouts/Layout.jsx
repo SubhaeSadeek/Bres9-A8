@@ -7,7 +7,7 @@ const Layout = () => {
                 {/* navbar  */}
                 <Navbar></Navbar>
                 {/* main */}
-                <div className="w-10/12  mx-auto">
+                <div className="w-10/12  mx-auto min-h-dvh">
                 <Outlet></Outlet>
                 </div>
                 {/* footer */}
