@@ -2,7 +2,7 @@
 
 [Assignment Requirement PDF Guide link here...](https://drive.google.com/file/d/1HRe460WGIObirhQ7EeMlyrNLCi8uhhTO/view?usp=sharing)
 
-[live link for the project...](gadget-heaven27012025.surge.sh)
+[live link for the project...](http://gadget-heaven27012025.surge.sh)
 
 ## What you expect in this document
 
