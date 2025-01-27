@@ -2,8 +2,8 @@
 	{
 		"id": 1,
 		"title": "Dell XPS 13",
-		"image": "https://example.com/images/dell-xps-13.jpg",
-		"category": "laptop",
+		"image": "https://i.ibb.co.com/t3Vty9X/Dell-XPS-13.jpg",
+		"category": "Laptop",
 		"price": 1200,
 		"description": "A premium ultrabook with stunning display and powerful performance.",
 		"specification": [
@@ -20,10 +20,10 @@
 	{
 		"id": 2,
 		"title": "iPhone 14 Pro",
-		"image": "https://example.com/images/iphone-14-pro.jpg",
-		"category": "phone",
+		"image": "https://i.ibb.co.com/WpHKLPT/i-Phone-14-Pro.jpg",
+		"category": "Phone",
 		"price": 999,
-		"description": "Experience the ultimate smartphone with an advanced camera system and A16 Bionic chip.",
+		"description": "Experience the ultimate smartPhone with an advanced camera system and A16 Bionic chip.",
 		"specification": [
 			"6.1-inch OLED Display",
 			"A16 Bionic Chip",
@@ -38,10 +38,10 @@
 	{
 		"id": 3,
 		"title": "Samsung Galaxy Watch 6",
-		"image": "https://example.com/images/galaxy-watch-6.jpg",
-		"category": "smartwatch",
+		"image": "https://i.ibb.co.com/CzR5cMb/Samsung-Galaxy-Watch-6.webp",
+		"category": "Smart Watch",
 		"price": 399,
-		"description": "A cutting-edge smartwatch with advanced health and fitness tracking.",
+		"description": "A cutting-edge Smart Watch with advanced health and fitness tracking.",
 		"specification": [
 			"1.5-inch AMOLED Display",
 			"Heart Rate Monitor",
@@ -56,10 +56,10 @@
 	{
 		"id": 4,
 		"title": "Apple MacBook Pro 16",
-		"image": "https://example.com/images/macbook-pro-16.jpg",
-		"category": "laptop",
+		"image": "https://i.ibb.co.com/KhD0dy4/Apple-Mac-Book-Pro-16.jpg",
+		"category": "Laptop",
 		"price": 2399,
-		"description": "A professional-grade laptop with unmatched performance and an immersive display.",
+		"description": "A professional-grade Laptop with unmatched performance and an immersive display.",
 		"specification": [
 			"16-inch Liquid Retina XDR Display",
 			"M2 Max Chip",
@@ -74,10 +74,10 @@
 	{
 		"id": 5,
 		"title": "Sony WH-1000XM5",
-		"image": "https://example.com/images/sony-wh-1000xm5.jpg",
-		"category": "accessory",
+		"image": "https://i.ibb.co.com/yRthP24/Sony-WH-1000-XM5.jpg",
+		"category": "Accessory",
 		"price": 349,
-		"description": "Industry-leading noise-canceling headphones with exceptional sound quality.",
+		"description": "Industry-leading noise-canceling headPhones with exceptional sound quality.",
 		"specification": [
 			"Over-Ear Design",
 			"Noise Cancelation",
@@ -92,10 +92,10 @@
 	{
 		"id": 6,
 		"title": "Google Pixel 7",
-		"image": "https://example.com/images/pixel-7.jpg",
-		"category": "phone",
+		"image": "https://i.ibb.co.com/pLdcgGn/Google-Pixel-7.jpg",
+		"category": "Phone",
 		"price": 599,
-		"description": "A powerful and affordable smartphone with a clean Android experience.",
+		"description": "A powerful and affordable smartPhone with a clean Android experience.",
 		"specification": [
 			"6.3-inch OLED Display",
 			"Google Tensor G2",
@@ -110,10 +110,10 @@
 	{
 		"id": 7,
 		"title": "Apple Watch Series 9",
-		"image": "https://example.com/images/apple-watch-series-9.jpg",
-		"category": "smartwatch",
+		"image": "https://i.ibb.co.com/17TDbfq/Apple-Watch-Series-9.webp",
+		"category": "Smart Watch",
 		"price": 429,
-		"description": "The ultimate smartwatch for fitness and productivity, now even better.",
+		"description": "The ultimate Smart Watch for fitness and productivity, now even better.",
 		"specification": [
 			"Always-On Retina Display",
 			"Heart Rate and SpO2 Tracking",
@@ -128,8 +128,8 @@
 	{
 		"id": 8,
 		"title": "Logitech MX Master 3",
-		"image": "https://example.com/images/logitech-mx-master-3.jpg",
-		"category": "accessory",
+		"image": "https://i.ibb.co.com/gvHdHq9/Logitech-MX-Master-3.png",
+		"category": "Accessory",
 		"price": 99,
 		"description": "A premium wireless mouse with ergonomic design and advanced features.",
 		"specification": [
@@ -146,8 +146,8 @@
 	{
 		"id": 9,
 		"title": "OnePlus Buds Pro 2",
-		"image": "https://example.com/images/oneplus-buds-pro-2.jpg",
-		"category": "accessory",
+		"image": "https://i.ibb.co.com/5K6TqGg/One-Plus-Buds-Pro-2.webp",
+		"category": "Accessory",
 		"price": 149,
 		"description": "High-quality earbuds with active noise cancelation and dynamic sound.",
 		"specification": [
@@ -164,10 +164,10 @@
 	{
 		"id": 10,
 		"title": "Lenovo ThinkPad X1 Carbon",
-		"image": "https://example.com/images/thinkpad-x1-carbon.jpg",
-		"category": "laptop",
+		"image": "https://i.ibb.co.com/WvgPzPF/Lenovo-Think-Pad-X1-Carbon.jpg",
+		"category": "Laptop",
 		"price": 1800,
-		"description": "A robust business laptop with lightweight design and top-notch security.",
+		"description": "A robust business Laptop with lightweight design and top-notch security.",
 		"specification": [
 			"14-inch WQHD Display",
 			"Intel Core i7 12th Gen",
@@ -182,10 +182,10 @@
 	{
 		"id": 11,
 		"title": "Samsung Galaxy Tab S8",
-		"image": "https://example.com/images/galaxy-tab-s8.jpg",
-		"category": "tablet",
+		"image": "https://i.ibb.co.com/x8VrhYB/Samsung-Galaxy-Tab-S8.webp",
+		"category": "Tablet",
 		"price": 699,
-		"description": "A powerful tablet for work and entertainment with an ultra-slim design.",
+		"description": "A powerful Tablet for work and entertainment with an ultra-slim design.",
 		"specification": [
 			"11-inch LCD Display",
 			"Qualcomm Snapdragon 8 Gen 1",
@@ -200,10 +200,10 @@
 	{
 		"id": 12,
 		"title": "Microsoft Surface Laptop 5",
-		"image": "https://example.com/images/surface-laptop-5.jpg",
-		"category": "laptop",
+		"image": "https://i.ibb.co.com/3ckYQWr/Microsoft-Surface-Laptop-5.jpg",
+		"category": "Laptop",
 		"price": 1400,
-		"description": "A stylish and versatile laptop with a touch screen and all-day battery life.",
+		"description": "A stylish and versatile Laptop with a touch screen and all-day battery life.",
 		"specification": [
 			"13.5-inch PixelSense Display",
 			"Intel Core i5",
@@ -218,8 +218,8 @@
 	{
 		"id": 13,
 		"title": "Oppo Enco X2",
-		"image": "https://example.com/images/oppo-enco-x2.jpg",
-		"category": "accessory",
+		"image": "https://i.ibb.co.com/qF7Mswn/Oppo-Enco-X2.png",
+		"category": "Accessory",
 		"price": 129,
 		"description": "Premium earbuds with Hi-Fi sound quality and active noise cancelation.",
 		"specification": [
@@ -236,10 +236,10 @@
 	{
 		"id": 14,
 		"title": "HP Spectre x360",
-		"image": "https://example.com/images/hp-spectre-x360.jpg",
-		"category": "laptop",
+		"image": "https://i.ibb.co.com/28Y8kQk/HP-Spectre-x360.jpg",
+		"category": "Laptop",
 		"price": 1650,
-		"description": "A convertible laptop with stunning design and performance.",
+		"description": "A convertible Laptop with stunning design and performance.",
 		"specification": [
 			"13.5-inch OLED Touch Display",
 			"Intel Core i7 13th Gen",
@@ -254,8 +254,8 @@
 	{
 		"id": 15,
 		"title": "Xiaomi Mi Band 8",
-		"image": "https://example.com/images/mi-band-8.jpg",
-		"category": "smartwatch",
+		"image": "https://i.ibb.co.com/TRqz85w/Xiaomi-Mi-Band-8.jpg",
+		"category": "Smart Watch",
 		"price": 49,
 		"description": "Affordable fitness tracker with advanced health tracking features.",
 		"specification": [
@@ -272,10 +272,10 @@
 	{
 		"id": 16,
 		"title": "Asus ROG Strix G15",
-		"image": "https://example.com/images/asus-rog-strix-g15.jpg",
-		"category": "laptop",
+		"image": "https://i.ibb.co.com/kc66TKm/Asus-ROG-Strix-G15.webp",
+		"category": "Laptop",
 		"price": 2100,
-		"description": "High-performance gaming laptop with immersive visuals and cooling technology.",
+		"description": "High-performance gaming Laptop with immersive visuals and cooling technology.",
 		"specification": [
 			"15.6-inch QHD Display",
 			"AMD Ryzen 9 6900HX",
@@ -290,10 +290,10 @@
 	{
 		"id": 17,
 		"title": "Samsung Galaxy Z Fold 5",
-		"image": "https://example.com/images/galaxy-z-fold-5.jpg",
-		"category": "phone",
+		"image": "https://i.ibb.co.com/3vFS5YD/Samsung-Galaxy-Z-Fold-5.jpg",
+		"category": "Phone",
 		"price": 1799,
-		"description": "The world's most advanced foldable smartphone with a 7.6-inch OLED screen.",
+		"description": "The world's most advanced foldable smartPhone with a 7.6-inch OLED screen.",
 		"specification": [
 			"7.6-inch Foldable AMOLED Display",
 			"Snapdragon 8 Gen 2",
@@ -308,10 +308,10 @@
 	{
 		"id": 18,
 		"title": "Razer Blade 15",
-		"image": "https://example.com/images/razer-blade-15.jpg",
-		"category": "laptop",
+		"image": "https://i.ibb.co.com/jVxSbPk/Razer-Blade-15.jpg",
+		"category": "Laptop",
 		"price": 2200,
-		"description": "The ultimate gaming laptop with a sleek design and powerful performance.",
+		"description": "The ultimate gaming Laptop with a sleek design and powerful performance.",
 		"specification": [
 			"15.6-inch 4K OLED Display",
 			"Intel Core i9",
@@ -326,10 +326,10 @@
 	{
 		"id": 19,
 		"title": "Acer Predator Helios 300",
-		"image": "https://example.com/images/acer-predator-helios-300.jpg",
-		"category": "laptop",
+		"image": "https://i.ibb.co.com/p4mdRS2/Acer-Predator-Helios-300.png",
+		"category": "Laptop",
 		"price": 1500,
-		"description": "A high-performance gaming laptop with a powerful GPU and cooling system.",
+		"description": "A high-performance gaming Laptop with a powerful GPU and cooling system.",
 		"specification": [
 			"15.6-inch FHD Display",
 			"Intel Core i7 12th Gen",
@@ -344,10 +344,10 @@
 	{
 		"id": 20,
 		"title": "Bose QuietComfort 45",
-		"image": "https://example.com/images/bose-quietcomfort-45.jpg",
-		"category": "accessory",
+		"image": "https://i.ibb.co.com/PxcBwvb/Bose-Quiet-Comfort-45.webp",
+		"category": "Accessory",
 		"price": 329,
-		"description": "Noise-canceling headphones with premium sound quality and comfort.",
+		"description": "Noise-canceling headPhones with premium sound quality and comfort.",
 		"specification": [
 			"Over-Ear Design",
 			"Active Noise Cancelation",
