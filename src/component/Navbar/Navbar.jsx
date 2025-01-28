@@ -9,7 +9,7 @@ const Navbar = () => {
         <li><NavLink to="/dashboard">Dashboard</NavLink></li>
     </>
     return (
-     <div className="min-h-20">
+     <div className="min-h-16">
            <div className="navbar bg-themeBG/10 backdrop-blur-lg  fixed z-20 px-16">
   <div className="navbar-start justify-between lg:justify-normal">
     <div className="dropdown">

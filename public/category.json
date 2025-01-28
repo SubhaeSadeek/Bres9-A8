@@ -13,70 +13,11 @@
 	},
 	{
 		"id": 4,
-		"category": "Laptop"
+		"category": "Accessory"
 	},
+
 	{
 		"id": 5,
-		"category": "Accessory"
-	},
-	{
-		"id": 6,
-		"category": "Phone"
-	},
-	{
-		"id": 7,
-		"category": "Smart Watch"
-	},
-	{
-		"id": 8,
-		"category": "Accessory"
-	},
-	{
-		"id": 9,
-		"category": "Accessory"
-	},
-	{
-		"id": 10,
-		"category": "Laptop"
-	},
-	{
-		"id": 11,
 		"category": "Tablet"
-	},
-	{
-		"id": 12,
-		"category": "Laptop"
-	},
-	{
-		"id": 13,
-		"category": "Accessory"
-	},
-	{
-		"id": 14,
-		"category": "Laptop"
-	},
-	{
-		"id": 15,
-		"category": "Smart Watch"
-	},
-	{
-		"id": 16,
-		"category": "Laptop"
-	},
-	{
-		"id": 17,
-		"category": "Phone"
-	},
-	{
-		"id": 18,
-		"category": "Laptop"
-	},
-	{
-		"id": 19,
-		"category": "Laptop"
-	},
-	{
-		"id": 20,
-		"category": "Accessory"
 	}
 ]
