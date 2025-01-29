@@ -19,7 +19,8 @@ export default {
         inStockBrd: "#309C08",
       },
       backgroundColor:{
-        themeBG: "#9538E2"
+        themeBG: "#9538E2",
+        inStockBG: "#309C08"
       },
     },
   },

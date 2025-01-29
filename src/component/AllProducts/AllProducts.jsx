@@ -6,7 +6,10 @@ const AllProducts = ({allProductsData}) => {
     const [category, setCategory] = useState(allProductsData);
     
     const handleCategory = (prodCat) =>{
-        if(prodCat === 'all'){
+        if(prodCat === ""){
+            setCategory([])
+        }
+         if(prodCat === 'all'){
             setCategory(allProductsData)
         }
         else {
@@ -14,10 +17,12 @@ const AllProducts = ({allProductsData}) => {
             setCategory(categoryProduct);
           }
     }
-    console.log(category);
+    
     return (
-        <div className="flex gap-3">
-            <div>
+        <div className="flex gap-3 mb-12">
+          {
+            category.length > 0 ? <>
+              <div>
                 <Sidemenu handleCategory={handleCategory}></Sidemenu>
             </div>
             <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -26,6 +31,16 @@ const AllProducts = ({allProductsData}) => {
                 category.map((product) => <Product key={product.id} product={product}></Product>)
             }
         </div>
+            </> : 
+            <>
+            <div>
+                <Sidemenu handleCategory={handleCategory}></Sidemenu>
+            </div>
+                <div className="content-center ">
+                <h1 className="text-5xl font-extrabold text-themeText">No avaialvle data found</h1>
+                </div>
+            </>
+          }
         </div>
     );
 };

@@ -31,7 +31,7 @@
 			"ProMotion Technology",
 			"iOS 16"
 		],
-		"availability": true,
+		"availability": false,
 		"rating": 4.9,
 		"warranty": 12
 	},
@@ -175,7 +175,7 @@
 			"1TB SSD",
 			"Windows 11 Pro"
 		],
-		"availability": true,
+		"availability": false,
 		"rating": 4.7,
 		"warranty": 36
 	},
@@ -183,7 +183,7 @@
 		"id": 11,
 		"title": "Samsung Galaxy Tab S8",
 		"image": "https://i.ibb.co.com/x8VrhYB/Samsung-Galaxy-Tab-S8.webp",
-		"category": "Tablet",
+		"category": "",
 		"price": 699,
 		"description": "A powerful Tablet for work and entertainment with an ultra-slim design.",
 		"specification": [
@@ -229,7 +229,7 @@
 			"Wireless Charging",
 			"30-hour Battery Life"
 		],
-		"availability": true,
+		"availability": false,
 		"rating": 4.5,
 		"warranty": 12
 	},

@@ -3,11 +3,11 @@ import Footer from "../component/Footer/Footer";
 import Navbar from "../component/Navbar/Navbar";
 const Layout = () => {
     return (
-        <div className="bg-[#F6F6F6]">
+        <div className="bg-[#F6F6F6] container mx-auto">
                 {/* navbar  */}
                 <Navbar></Navbar>
                 {/* main */}
-                <div className="w-10/12  mx-auto min-h-dvh">
+                <div className="min-h-dvh">
                 <Outlet></Outlet>
                 </div>
                 {/* footer */}
