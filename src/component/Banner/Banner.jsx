@@ -1,7 +1,7 @@
 import bannerImg from "../../assets/banner.jpg";
 const Banner = () => {
     return (
-       <div className="h-[60rem] relative">
+       <div className="h-[40rem] md:h-[50rem] relative">
          <div className=" pt-16 h-[35rem] bg-themeBG ">
         <div className="hero-content text-center text-white">
           <div className="max-w-4xl">
@@ -13,7 +13,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className=" lg:h-[50%] w-[80%] md:mx-auto p-2 md:p-6 border-white border-2 rounded-[2rem] absolute top-[24rem] md:top-[21rem] right-9 md:right-[7rem]">
+      <div className=" md:h-[50%] w-[80%] md:w-[70%] md:mx-auto p-2 md:p-6 border-white border-2 rounded-[2rem] absolute top-[29rem] md:top-[21rem] right-8  md:right-[12rem]">
             <img className="h-full  w-full rounded-[2rem]" src={bannerImg} alt="" />
       </div> 
     </div>

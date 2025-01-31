@@ -1,15 +1,54 @@
+import { useContext } from "react";
 import { CiHeart } from "react-icons/ci";
 import { GiShoppingCart } from "react-icons/gi";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import { StorageContext } from "../StorageContext/StorageContext";
+
 
 const Navbar = () => {
+      const {pathname} = useLocation();
+      
+      const {cardListTotal, wishListTotal} = useContext(StorageContext);
+ 
     const menuLink = <>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/statistics">Statistics</NavLink></li>
-        <li><NavLink to="/dashboard">Dashboard</NavLink></li>
+        <li><NavLink 
+        to="/"
+        className={({isActive})=>
+        isActive ? "text-yellow-500 font-bold" : ""
+        }
+        >
+        Home
+        </NavLink></li>
+        
+        <li><NavLink 
+        to="/statistics"
+        className={({isActive})=>
+        isActive ? "text-yellow-500 font-bold" : ""
+        }
+        >
+        Statistics
+        </NavLink></li>
+        
+        <li><NavLink 
+        to="/dashboard"
+        className={({isActive})=>
+        isActive ? "text-yellow-500 font-bold" : ""
+        }
+        >
+        Dashboard
+        </NavLink></li>
+        <li><NavLink 
+        to={"profile"}
+        className={({isActive}) =>
+        isActive ? "text-yellow-500 font-bold" : ""
+        }
+        >
+        User Profile
+        </NavLink></li>
     </>
+    
     return (
-      <div className="navbar  bg-themeBG text-white px-16">
+      <div className={`navbar ${pathname === "/" ? "bg-themeBG text-white" : "bg-white"} px-16`}>
       <div className=" navbar-start justify-between lg:justify-normal">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="lg:hidden">
@@ -40,8 +79,16 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end gap-4">
+      
+      <div className="indicator">
+      <span className="indicator-item badge badge-secondary">{cardListTotal}</span>
       <GiShoppingCart className="text-xl md:text-3xl rounded-full border border-themeBorder" />
+      </div>
+      
+      <div className="indicator">
+      <span className="indicator-item badge badge-primary">{wishListTotal}</span>
       <CiHeart className="text-xl md:text-3xl rounded-full border border-themeBorder" />
+      </div>
       </div>
     </div>
     );

@@ -2,7 +2,7 @@ import { useState } from "react";
 import Product from "../Product/Product";
 import Sidemenu from "../Sidemenu/Sidemenu";
 
-const AllProducts = ({allProductsData}) => {
+const AllProducts = ({allProductsData, updateTotal}) => {
     const [category, setCategory] = useState(allProductsData);
     
     const handleCategory = (prodCat) =>{
@@ -28,7 +28,7 @@ const AllProducts = ({allProductsData}) => {
             <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-4">
             
             {
-                category.map((product) => <Product key={product.id} product={product}></Product>)
+                category.map((product) => <Product key={product.id} product={product} updateTotal={updateTotal}></Product>)
             }
         </div>
             </> : 

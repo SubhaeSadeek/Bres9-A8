@@ -1,45 +1,81 @@
-import { useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import { GiShoppingCart } from "react-icons/gi";
 import { useLoaderData, useParams } from "react-router-dom";
 
+import { Toaster } from "react-hot-toast";
+import useTitle from "../../utils/useTitle.js";
+import { addItemsFromLocalStr, getItemsFromLocalStr } from "../../utils/utils.js";
+import { addWishlistToLocalStrg, getWishlistFrmLocalStrg } from "../../utils/wishlistLStorage.js";
+import Ratings from "../Ratings/Ratings.jsx";
+import { StorageContext } from "../StorageContext/StorageContext.jsx";
+
 
 const ProductDetails = () => {
-    
+  useTitle("Details")
+
+    const{updateTotal} = useContext(StorageContext);
+    const [isExist, setIsExist ] = useState(false)
+    const [isWishList, setIsWishList] = useState(false)
+
     const {productId} = useParams();
+    const id = parseInt(productId)
     const allProductsData = useLoaderData();
-    const productDetail = allProductsData.find((product)=> product.id === parseInt(productId))
-    const {title, image, price, description, specification, availability, } = productDetail;
+    const productDetail = allProductsData.find((product)=> product.id === parseInt(id))
+    const {title, image, price, description, specification, availability, rating } = productDetail;
 
     useEffect(()=>{
         window.scrollTo(0,0);
+       const storage =  getItemsFromLocalStr();
+       if(storage.includes(id)){
+        setIsExist(true)
+       }
+
+       const wishlist = getWishlistFrmLocalStrg();
+       if(wishlist.includes(id)){
+        setIsWishList(true);
+       }
     }, [])
 
+    const handleAddToCart = (productId) => {
+      addItemsFromLocalStr(productId);
+      // setIsActive(true)
+      setIsExist(true)
+      updateTotal()
+      Toaster.success('Successfully toasted!')
+      
+    }
+    const handleAddToWishlist = (wishlistId) => {
+      addWishlistToLocalStrg(wishlistId);
+      setIsWishList(true)
+      updateTotal()
+    }
+
     return (
-        <div>
+        <div className="relative">
             {/* banner section */}
-<div className="hero bg-themeBG pb-32">
-  <div className="hero-content w-1/2 text-center text-white">
-     <div className="">
-      <h1 className="text-2xl font-bold">Product Details</h1>
-      <p className="py-6">
-      Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
-      </p>
-     </div>
-   </div>
-</div>
+          <div className="hero bg-themeBG pb-32">
+            <div className="hero-content w-1/2 text-center text-white">
+              <div className="">
+                <h1 className="text-2xl font-bold">Product Details</h1>
+                <p className="py-6">
+                Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
+                </p>
+              </div>
+            </div>
+          </div>
         
         {/* detail of the product secton  */}
         {/* ***********************************
           ********************************** */}
 
-        <div className="hero w-2/3 bg-white absolute left-56 bottom-5 rounded-xl ">
-  <div className="hero-content flex-col lg:flex-row  h-full rounded-xl">
-    <div className="h-full content-center">
-    <img
-      src={image}
-      className="max-w-xs max-h-52 rounded-lg" />
-    </div>
-    <div className="bg-themeBG/5 h-full p-4 rounded-xl">
+  <div className="hero w-2/3 bg-white absolute left-56 -bottom-72 rounded-xl ">
+    <div className="hero-content flex-col lg:flex-row  h-full rounded-xl">
+        <div className="h-full content-center">
+        <img
+          src={image}
+          className="max-w-xs max-h-52 rounded-lg" />
+        </div>
+      <div className="bg-themeBG/5 h-full p-4 rounded-xl">
       <h1 className="text-xl font-bold text-subTitle">{title}</h1>
       <p className="text-priceGRay">Price: &#36; {price}</p>
       {
@@ -47,27 +83,36 @@ const ProductDetails = () => {
         <p className="btn-xs w-32 border border-red-500 text-red-500 bg-red-100 text-center py-1 rounded-badge">Out of Stock</p> 
 
       }
-      
+
+      {/* Short Descriotion */}
       <p className="text-mainGray">{description}</p>
+
+      {/* detail specification in numbered list */}
+
       <h3 className="text-subTitle font-bold">Specification:</h3>
-      
         <ol className="text-mainGray list-decimal pl-10">
             {
                 specification.map((item, index) => <li className="pl-1" key={index}>{item}</li>)
             }
         </ol>
+
+        {/* rating */}
         <h3 className="text-subTitle font-bold">Rating:</h3>
+        <div className=" flex justify-start items-center gap-5"> 
+        <Ratings rating={rating}></Ratings> 
+        <span className={`text-lg ${rating >= 4 ? "text-mainGray/50": "text-red-300"}`}>{rating}</span>
+        </div>
 
             {/* Button for getting cart or wishlist */}
-
+            <div><Toaster/></div>
       <div className="flex gap-3 items-center">
         {/* add to cart button */}
-      <button className="bg-themeBG text-white text-xl font-bold rounded-badge px-3 py-3 hover:bg-white hover:text-themeText border-2 border-themeBorder flex gap-2 items-center">Add to Cart
+      <button onClick={()=>handleAddToCart(id)} className={`btn bg-themeBG text-white text-xl font-bold rounded-badge px-3 py-3 hover:bg-white hover:text-themeText border-2 border-themeBorder flex gap-2 items-center`} disabled={isExist}>Add to Cart
       <GiShoppingCart className="text-xl" />
       </button>
 
       {/* add to  wish list heart button */}
-      <button className="p-3 rounded-full text-white hover:text-themeText border-2 bg-themeBG border-themeBorder hover:bg-white">
+      <button onClick={()=> handleAddToWishlist(id)} className="btn p-3 rounded-full text-white hover:text-themeText border-2 bg-themeBG border-themeBorder hover:bg-white" disabled={isWishList}>
     <svg
     xmlns="http://www.w3.org/2000/svg"
     className="h-6 w-6"

@@ -15,7 +15,7 @@ const Product = ({product}) => {
     <h2 className="card-title">{title}</h2>
     <p>Price: &#36; {price} </p>
     <div className="card-actions">
-      <Link to={`/details/${id}`}><button className="btn btn-primary">Details</button></Link>
+      <Link to={`/details/${id}`}><button className="bg-white text-themeText rounded-badge p-2  hover:bg-themeBG hover:text-white border-2 border-themeBorder">View Details</button></Link>
     </div>
   </div>
 </div>
