@@ -1,0 +1,82 @@
+[
+	{
+		"title": "Dell XPS 13",
+		"price": 1200
+	},
+	{
+		"title": "iPhone 14 Pro",
+		"price": 999
+	},
+	{
+		"title": "Samsung Galaxy Watch 6",
+		"price": 399
+	},
+	{
+		"title": "Apple MacBook Pro 16",
+		"price": 2399
+	},
+	{
+		"title": "Sony WH-1000XM5",
+		"price": 349
+	},
+	{
+		"title": "Google Pixel 7",
+		"price": 599
+	},
+	{
+		"title": "Apple Watch Series 9",
+		"price": 429
+	},
+	{
+		"title": "Logitech MX Master 3",
+		"price": 99
+	},
+	{
+		"title": "OnePlus Buds Pro 2",
+		"price": 149
+	},
+	{
+		"title": "Lenovo ThinkPad X1 Carbon",
+		"price": 1800
+	},
+	{
+		"title": "Samsung Galaxy Tab S8",
+		"price": 699
+	},
+	{
+		"title": "Microsoft Surface Laptop 5",
+		"price": 1400
+	},
+	{
+		"title": "Oppo Enco X2",
+		"price": 129
+	},
+	{
+		"title": "HP Spectre x360",
+		"price": 1650
+	},
+	{
+		"title": "Xiaomi Mi Band 8",
+		"price": 49
+	},
+	{
+		"title": "Asus ROG Strix G15",
+		"price": 2100
+	},
+	{
+		"title": "Samsung Galaxy Z Fold 5",
+		"price": 1799
+	},
+	{
+		"title": "Razer Blade 15",
+		"price": 2200
+	},
+	{
+		"title": "Acer Predator Helios 300",
+		"price": 1500
+	},
+	{
+		"title": "Bose QuietComfort 45",
+		"price": 329
+	}
+]

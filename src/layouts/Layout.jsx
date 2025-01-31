@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import { Outlet } from "react-router-dom";
 import Footer from "../component/Footer/Footer";
 import Navbar from "../component/Navbar/Navbar";
@@ -10,7 +11,7 @@ useTitle("Gadget")
 
        <StorageContextProvider>
          <div className="bg-[#F6F6F6] container mx-auto">
-         
+          <div><Toaster></Toaster></div>
                 {/* navbar  */}
                 <Navbar></Navbar>
                 {/* main */}

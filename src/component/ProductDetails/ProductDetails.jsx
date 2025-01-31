@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { GiShoppingCart } from "react-icons/gi";
 import { useLoaderData, useParams } from "react-router-dom";
 
-import { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import useTitle from "../../utils/useTitle.js";
 import { addItemsFromLocalStr, getItemsFromLocalStr } from "../../utils/utils.js";
 import { addWishlistToLocalStrg, getWishlistFrmLocalStrg } from "../../utils/wishlistLStorage.js";
@@ -41,13 +41,27 @@ const ProductDetails = () => {
       // setIsActive(true)
       setIsExist(true)
       updateTotal()
-      Toaster.success('Successfully toasted!')
+      toast.success(`You have successfully added ${title}`)
+      
       
     }
     const handleAddToWishlist = (wishlistId) => {
       addWishlistToLocalStrg(wishlistId);
       setIsWishList(true)
       updateTotal()
+      toast.success(`You have successfully added ${title}`, 
+        {
+        style: {
+          border: '1px solid #713200',
+          padding: '16px',
+          color: '#713200',
+        },
+        iconTheme: {
+          primary: '#713200',
+          secondary: '#FFFAEE',
+        },
+        position: "top-right",
+      });
     }
 
     return (
@@ -104,7 +118,7 @@ const ProductDetails = () => {
         </div>
 
             {/* Button for getting cart or wishlist */}
-            <div><Toaster/></div>
+            
       <div className="flex gap-3 items-center">
         {/* add to cart button */}
       <button onClick={()=>handleAddToCart(id)} className={`btn bg-themeBG text-white text-xl font-bold rounded-badge px-3 py-3 hover:bg-white hover:text-themeText border-2 border-themeBorder flex gap-2 items-center`} disabled={isExist}>Add to Cart
